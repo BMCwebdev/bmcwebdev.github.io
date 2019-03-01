@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Let's Fight Cats!</title>
-  <!-- <link href="style.css" rel="stylesheet" /> -->
-  <style>
-    .first {
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      background: lightcoral;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 100%;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 100%;
-    }
+  <head>
+    <meta charset="utf-8" />
+    <title>Let's Fight Cats!</title>
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .first {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: #c31432; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #240b36,
+          #c31432
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #240b36,
+          #c31432
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    .second {
-      height: 70%;
-      width: 70%;
-    }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+      }
 
-    video {
-      height: auto;
-      max-height: 100%;
-      max-width: 100%;
-      width: auto;
-    }
-  </style>
-</head>
-<body>
-  <div class="first">
-    <div class="second">
+      .second {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: lightcoral;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 70%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 70%;
+      }
+
+      video {
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <div class="second">
         <video controls>
-            <source src="spikey.webm" type="video/webm">
-            Sorry, your browser doesn't support webm videos.
+          <source src="spikey.webm" type="video/webm" />
+          Sorry, your browser doesn't support webm videos.
         </video>
+      </div>
     </div>
-  </div>
 
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
   </script> -->
-</body>
+  </body>
 </html>
